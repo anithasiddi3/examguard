@@ -1,5 +1,13 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "experimentalServices": {
+    "frontend": {
+      "root": "frontend",
+      "routePrefix": "/",
+      "framework": "create-react-app"
+    },
+    "backend": {
+      "root": "backend",
+      "routePrefix": "/_/backend"
+    }
+  }
 }
