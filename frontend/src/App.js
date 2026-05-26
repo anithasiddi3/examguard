@@ -1,12 +1,13 @@
+import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
+
+import ExamPage from "./pages/ExamPage";
 
 function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<ExamList />} />
-        <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="/results" element={<ResultPage />} />
+        <Route path="/" element={<ExamPage />} />
       </Routes>
     </HashRouter>
   );
